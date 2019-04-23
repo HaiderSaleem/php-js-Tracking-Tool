@@ -44,7 +44,8 @@ ob_start();
 			        	
 			       
 					// get location 
-				       $url = json_decode(file_get_contents("http://api.ipinfodb.com/v3/ip-city/?key=4d614c11aa80afe284d67d62e72c6e6472b91699539595a61e631b80f1d80e38&ip=".$_SERVER['REMOTE_ADDR']."&format=json"));
+				       $url = json_decode(file_get_contents(//your key here from http://api.ipinfodb.com
+				   ));
 				        $country=$url->countryName;  // user country
 				        $city=$url->cityName;       // city
 				        $region=$url->regionName;   // regoin
